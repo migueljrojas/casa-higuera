@@ -19,22 +19,19 @@
     }
 
     &__container  {
+        width: 100%;
         overflow: hidden;
         position: relative;
-        height: 86vw;
+        height: 0;
         margin-bottom: 5vh;
-
-        @include mq(sm) {
-            height: 26vw;
-            margin-bottom: 0;
-        }
+        padding-bottom: 100%;
 
         img {
             position: absolute;
             top: 0;
             left: 0;
-            height: auto;
-            width: 100%;
+            height: 100%;
+            width: auto;
         }
     }
 
@@ -72,7 +69,7 @@
 
             padding-bottom: 1vw;
             margin-bottom: 1vw;
-            font-size: 1vw;
+            font-size: 16px;
         }
     }
 
@@ -85,8 +82,8 @@
         letter-spacing: 6px;
 
         @include mq(sm) {
-            font-size: 1.3vw;
-            padding: 0 2.7vw;
+            font-size: 21px;
+            padding: 0 15px;
 
         }
     }
