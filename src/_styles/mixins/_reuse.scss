@@ -158,3 +158,18 @@
         }
     }
 }
+
+@mixin separator($size: 6vw, $color: $white, $bottom: 0) {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: $size;
+        background: $color;
+        bottom: $bottom;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

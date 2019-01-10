@@ -1,0 +1,52 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.contacto
+        .contacto__wrapper.wrapper
+            .container
+                .row
+                    .col-xs-24.col-sm-20.col-sm-offset-2
+                        .row
+                            .col-xs-24.col-sm-12
+                                .contacto__image
+                                    img(src="/images/05. Contacto/01. Contacto.jpg")
+                            .col-xs-24.col-sm-12
+                                form.contacto__form
+                                    .contacto__form__heading
+                                        h3.contacto__form__title contacto
+                                        p.contacto__form__text Por favor complete el siguiente formulario. Los campo marcados con asterisco son obligatorios.
+                                    .contacto__form__wrapper
+                                        label.contacto__form__label Nombre*
+                                        input.contacto__form__input(type="text")
+                                    .contacto__form__wrapper
+                                        label.contacto__form__label Email*
+                                        input.contacto__form__input(type="email")
+                                    .contacto__form__wrapper
+                                        label.contacto__form__label Teléfono*
+                                        input.contacto__form__input(type="number")
+                                    .contacto__form__wrapper
+                                        label.contacto__form__label Comentarios
+                                        textarea.contacto__form__input.contacto__form__input--textarea
+                                    button.contacto__form__submit-button Enviar
+                                .contacto__contact-info
+                                    .contacto__group
+                                        p.contacto__text
+                                            |Reservas: 
+                                            a(href="#" target="_blank") +56-32 249 7900 
+                                            | | 
+                                            a(href="#" target="_blank") info@casahigueras.cl
+                                    .contacto__group
+                                        i.fa.fa-map-marker
+                                        p.contacto__text Calle higuera 133, Cerro Alegre. Valparaíso, Chile
+                                    a(href="http://facebook.com/casahigueras" target="_blank")
+                                        .contacto__group
+                                            i.fa.fa-facebook
+                                            p.contacto__text facebook.com/casahigueras
+                                    a(href="http://instagram.com/hotelcasahigueras" target="_blank")
+                                        .contacto__group
+                                            i.fa.fa-instagram
+                                            p.contacto__text instagram.com/hotelcasahigueras

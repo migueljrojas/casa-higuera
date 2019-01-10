@@ -1,3 +1,120 @@
-.home {
-    
+.home,
+.programas,
+.empresas {
+    &__slider {
+        margin-bottom: 0 !important;
+        height: 72.5vh;
+
+        @include mq(sm) {
+            height: 77.5vh;
+        }
+
+        &--layout {
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                margin-bottom: 0;
+            }
+        }
+
+        .slick-dots {
+            bottom: 1.5vw;
+
+            li {
+                margin: 0;
+                button {
+                    &:before {
+                        font-size: .5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    &__slide {
+        // width: 100%;
+        margin-bottom: -6px;
+        height: 72.5vh;
+        overflow: hidden;
+        position: relative;
+
+        @include mq(sm) {
+            height: 77.5vh;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+
+            @include mq(sm) {
+            }
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top:50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        background: rgba(0,0,0,.35);
+        height: 45vh;
+        width: 50vw;
+    }
+
+    &__title {
+        @include separator(50px);
+
+        font-size: 14px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+
+        @include mq(sm) {
+            @include separator(6vw);
+
+            font-size: 3vmin;
+            padding-bottom: 4vmin;
+            margin-bottom: 4vmin;
+        }
+    }
+
+    &__text {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+
+        @include mq(sm) {
+            font-size: 2vmin;
+            letter-spacing: .3vmin;
+        }
+    }
+
+    &__leaf {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 100px;
+        height: 100px;
+
+        @include mq(sm) {
+            height: 10vw;
+            width: 10vw;
+        }
+
+        img {
+            height: auto;
+            width: 100% ;
+        }
+
+    }
 }

@@ -1,0 +1,49 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.hotel--lugar
+        .hotel--lugar__wrapper.wrapper
+            .container
+                .row
+                    .col.xs.24
+                        section.hotel--lugar__hero
+                            .hotel--lugar__hero__image
+                                img(src="/images/hotel/El Lugar/01. Cielo y mar abierto.jpg")
+                            .hotel--lugar__hero__wrapper
+                                p.hotel--lugar__hero__title El lugar
+                                p.hotel--lugar__hero__text cielo y mar abierto
+                .row
+                    .col-xs-20.col-xs-offset-2
+                        section.hotel--lugar__overview
+                            .row
+                                .col-xs-24
+                                    .hotel--lugar__overview__wrapper.hotel--lugar__overview__wrapper--lugar
+                                        h3.hotel--lugar__overview__title cielo y mar abierto
+                                        p.hotel--lugar__overview__text En el corazón del Cerro Alegre y con una imponente vista a la bah´´ia de Valparaíso se encuentra Casa Higueras, en la zona declarada Patrimonio de la Humanidad por la UNESCO. Csa higueras ocupa una señorial casona de los años 20, que a través de un respetuoso trabajo de restauración, propone la uniónn de comodidad moderna junto a la calidez y elegancia de un pasado histótico.
+                            .row
+                                .col-xs-24.col-sm-16
+                                    .hotel--lugar__overview__image.hotel--lugar__overview__image--lugar
+                                        img(src="/images/hotel/El Lugar/02.jpg")
+                                .col-xs-24.col-sm-8
+                                    .hotel--lugar__overview__image.hotel--lugar__overview__image--lugar
+                                        img(src="/images/hotel/El Lugar/03.jpg")
+                .row
+                    .col-xs-20.col-xs-offset-2
+                        section.hotel--lugar__more-images
+                            .row
+                                .col-xs-24.col-sm-12
+                                    .row
+                                        .col-xs-24
+                                            .hotel--lugar__more-images__image.hotel--lugar__more-images__image--left-top
+                                                img(src="/images/hotel/El Lugar/04.jpg")
+                                    .row
+                                        .col-xs-24
+                                            .hotel--lugar__more-images__image.hotel--lugar__more-images__image--left-bottom
+                                                img(src="/images/hotel/El Lugar/05.jpg")
+                                .col-xs-24.col-sm-12
+                                    .hotel--lugar__more-images__image.hotel--lugar__more-images__image--right
+                                        img(src="/images/hotel/El Lugar/06.jpg")

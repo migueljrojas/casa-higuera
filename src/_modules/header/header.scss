@@ -1,6 +1,150 @@
 .header {
-
     $h: &;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2000;
+    background: $white;
+    margin-bottom: 2.5vh;
+
+    @include mq(sm) {
+        // height: 7.5vh;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding-right: 80px;
+        width: 100%;
+
+        @include mq(sm) {
+            padding-right: 0;
+            // height: auto;
+        }
+    }
+
+    &__image {
+        width: 30vw;
+        height: 5vh;
+
+        @include mq(sm) {
+            width: 25%;
+            height: 7vh;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    &__nav {
+        @include trans;
+
+        position: fixed;
+        height: 90vh;
+        top: 10vh;
+        width: 100vw;
+        transform: translateX(100%);
+        background: $white;
+        z-index: 1000;
+
+        @include mq(sm) {
+            background: none;
+            position: static;
+            transform: translateX(0);
+            height: auto;
+            width: auto;
+            z-index: auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+
+        @include mq(sm) {
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+        li {
+            @include separator($size: 80px, $color:$black, $bottom: -20px);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                &:after {
+                    display: none;
+                }
+                margin-bottom: 0;
+                padding: 0 1vw;
+            }
+
+            &:not(:first-child) {
+                padding-top:20px;
+
+                @include mq(sm) {
+                    border-left: 1px solid $black;
+                    border-top: none;
+                    padding-top: 0;
+                }
+            }
+        }
+
+        a {
+            color: $black;
+            font-weight: 700;
+
+            @include mq(sm) {
+                font-size: 1.3vmin;
+                letter-spacing: 1.5px;
+                font-weight: normal;
+
+            }
+        }
+    }
+
+    &__language-selector {
+        // width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mq(sm) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__language {
+        background: transparent;
+        border: none;
+        text-transform: uppercase;
+        padding: 0 20px;
+        font-size: 12px;
+
+        @include mq(sm) {
+            padding: 0 1vw;
+            font-size: 1.3vmin;
+
+        }
+
+        &:not(:first-child) {
+            border-left: 1px solid $black;
+        }
+    }
 
     &__hamburguer {
         cursor: pointer;
@@ -9,7 +153,12 @@
         margin: auto;
         position: absolute;
         right: 32px;
-        top: 30px;
+        top: 23px;
+        z-index: 2000;
+
+        @include mq(sm) {
+            display: none;
+        }
 
         span {
             background-color: $mainColor;
@@ -49,7 +198,8 @@
         }
 
         #{$h}__nav {
-
+            transform: translateX(0);
+            left: 0;
         }
     }
 }

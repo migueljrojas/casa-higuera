@@ -1,6 +1,26 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"el hotel",
+        "url":"/hotel"
+    },
+    {
+        "name":"restaurante maralegre",
+        "url":"/restaurante"
+    },
+    {
+        "name":"programas",
+        "url":"/programas"
+    },
+    {
+        "name":"empresas",
+        "url":"/empresas"
+    },
+    {
+        "name":"contacto",
+        "url":"/contacto"
+    },
+    {
+        "name":"reservar",
+        "url":"/reservar"
     }
 ]

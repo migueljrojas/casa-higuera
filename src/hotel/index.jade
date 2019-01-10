@@ -1,0 +1,32 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.hotel
+        section.hotel__menu.wrapper
+            .container
+                .row
+                    .col-xs-24.col-sm-8
+                        a(href="/hotel-nostalgia")
+                            .hotel__container
+                                img(src="/images/hotel/hotel.jpg")
+                                .hotel__wrapper
+                                    .hotel__title el hotel
+                                    .hotel__text nostalgia chic
+                    .col-xs-24.col-sm-8
+                        a(href="/hotel-lugar")
+                            .hotel__container
+                                img(src="/images/hotel/Lugar.jpg")
+                                .hotel__wrapper
+                                    .hotel__title el lugar
+                                    .hotel__text cielo y mar abierto
+                    .col-xs-24.col-sm-8
+                        a(href="/hotel-habitaciones")
+                            .hotel__container
+                                img(src="/images/hotel/habitaciones.jpg")
+                                .hotel__wrapper
+                                    .hotel__title las habitaciones
+                                    .hotel__text volver a casa

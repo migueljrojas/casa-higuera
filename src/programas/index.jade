@@ -1,0 +1,39 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.programas
+        section.programas__content.wrapper
+            .container
+                .row
+                    .col-xs-24
+                        .programas__slider.programas__slider--layout
+                            .programas__slide
+                                img(src="/images/03. Programas/01. Valparaiso perfecto.jpg")
+                                .programas__wrapper
+                                    .programas__title programas
+                                    .programas__text valparaíso prefecto
+            section.programas__menu.programas__menu--layout
+                .container
+                    .row
+                        .col-xs-24.col-sm-8
+                            a(href="/programas-ano-nuevo")
+                                .programas__container
+                                    img(src="/images/03. programas/00. Mini Menu/01. año nuevo.jpg")
+                                    .programas__wrapper
+                                        .programas__text año nuevo 2019
+                        .col-xs-24.col-sm-8
+                            a(href="/programas-escapada")
+                                .programas__container
+                                    img(src="/images/03. programas/00. Mini Menu/02. Escapada.jpg")
+                                    .programas__wrapper
+                                        .programas__text escapada romantica
+                        .col-xs-24.col-sm-8
+                            a(href="/programas-fin-de-semana")
+                                .programas__container
+                                    img(src="/images/03. programas/00. Mini Menu/03. Fin de semana.jpg")
+                                    .programas__wrapper
+                                        .programas__text programa fin de semana

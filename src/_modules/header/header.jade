@@ -1,2 +1,21 @@
 header.header
+    .container
+        .row
+            .col-xs-24
+                .header__wrapper
+                    a(href="/")
+                        .header__image
+                            img(src="/images/logo.png")
+                    .header__nav
+                        ul.header__list
+                            each item in site.data.header
+                                li
+                                    a(href=item.url)=item.name
+                    .header__language-selector
+                        button.header__language es
+                        button.header__language en
+    .header__hamburguer
+        span
+        span
+        span
     

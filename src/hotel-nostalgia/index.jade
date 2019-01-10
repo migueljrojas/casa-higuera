@@ -1,0 +1,59 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.hotel--nostalgia
+        .hotel--nostalgia__wrapper.wrapper
+            .container
+                .row
+                    .col.xs.24
+                        section.hotel--nostalgia__hero
+                            .hotel--nostalgia__hero__image
+                                img(src="/images/hotel/El Lugar/01. Cielo y mar abierto.jpg")
+                            .hotel--nostalgia__hero__wrapper
+                                p.hotel--nostalgia__hero__title El hotel
+                                p.hotel--nostalgia__hero__text nostalgia chic
+                .row
+                    .col-xs-20.col-xs-offset-2
+                        section.hotel--nostalgia__overview
+                            .row
+                                .col-xs-24
+                                    .hotel--nostalgia__overview__wrapper
+                                        h3.hotel--nostalgia__overview__title nostalgia chic
+                                        p.hotel--nostalgia__overview__text Una sencilla fachada de la calle Higuera esconde en su interior este sofisticado y cálido hotel bouttique de más de 1600 m2, que ocupa los cinco niveles originales de la cason, donde se distribuyan 20 habitaciones diseñadas con buen gusto y elegancia.
+                            .row
+                                .col-xs-24.col-sm-8
+                                    .hotel--nostalgia__overview__image
+                                        img(src="/images/hotel/El Hotel/02.jpg")
+                                .col-xs-24.col-sm-16
+                                    .hotel--nostalgia__overview__image
+                                        img(src="/images/hotel/El Hotel/03.jpg")
+                .row
+                    .col-xs-20.col-xs-offset-2
+                        section.hotel--nostalgia__images
+                            .row
+                                .col-xs-24.col-sm-12
+                                    .hotel--nostalgia__images__image
+                                        img(src="/images/hotel/El Hotel/04.jpg")
+                                .col-xs-24.col-sm-12
+                                    .hotel--nostalgia__images__image
+                                        img(src="/images/hotel/El Hotel/05.jpg")
+                .row
+                    .col-xs-20.col-xs-offset-2
+                        section.hotel--nostalgia__more-images
+                            .row
+                                .col-xs-24.col-sm-12
+                                    .row
+                                        .col-xs-24
+                                            .hotel--nostalgia__more-images__image.hotel--nostalgia__more-images__image--left-top
+                                                img(src="/images/hotel/El Hotel/06.jpg")
+                                    .row
+                                        .col-xs-24
+                                            .hotel--nostalgia__more-images__image.hotel--nostalgia__more-images__image--left-bottom
+                                                img(src="/images/hotel/El Hotel/07.jpg")
+                                .col-xs-24.col-sm-12
+                                    .hotel--nostalgia__more-images__image.hotel--nostalgia__more-images__image--right
+                                        img(src="/images/hotel/El Hotel/08.jpg")

@@ -1,0 +1,33 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.empresas
+        section.empresas__content.wrapper
+            .container
+                .row
+                    .col-xs-24
+                        .empresas__slider
+                            .empresas__slide
+                                img(src="/images/04. Empresas/01. Programas Especiales.jpg")
+                                .empresas__wrapper
+                                    .empresas__title empresas
+                                    .empresas__text programas especiales
+                .row
+                    .col-xs-20.col-xs-offset-2
+                        section.hotel--lugar__overview
+                            .row
+                                .col-xs-24
+                                    .hotel--lugar__overview__wrapper.hotel--lugar__overview__wrapper--lugar
+                                        h3.hotel--lugar__overview__title programas  especiales
+                                        p.hotel--lugar__overview__text Tranquilidad, privacidad e inmejorable ubicación. Casa higueras es reconocido como un lugar ideal para reuniones de negocios y directorios. Cuenta con espacios amplios y acogedores, sala de reuniones con vista privilegiada al puerto de Valparaíso, todo el equipamiento necesario, y un excelente servicio de Coffe-Break preparado "in house" por su Restaurant Maralegre.
+                            .row
+                                .col-xs-24.col-sm-16
+                                    .hotel--lugar__overview__image
+                                        img(src="/images/hotel/El Lugar/02.jpg")
+                                .col-xs-24.col-sm-8
+                                    .hotel--lugar__overview__image
+                                        img(src="/images/hotel/El Lugar/03.jpg")

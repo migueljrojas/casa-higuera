@@ -1,0 +1,135 @@
+.contacto {
+    &__image {
+        height: 72.5vh;
+        overflow: hidden;
+
+        @include mq(sm) {
+            height: 77.5vh;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__form {
+        &__heading {
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                margin-bottom: 2.5vw;
+            }
+        }
+
+        &__title {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: $blue;
+            letter-spacing: 3px;
+            text-align: center;
+
+            @include mq(sm) {
+                margin-bottom: 2vw;
+            }
+        }
+
+        &__text {
+            color: $blue;
+            text-align: center;
+            font-size: 12px;
+
+            @include mq(sm) {
+                font-size: 1.2vw;
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-bottom: 1.5vw;
+            }
+        }
+
+        &__label {
+            color: $blue;
+            font-size: 14px;
+            width: 100%;
+
+            @include mq(sm) {
+                font-size: 1vw;
+                width: 30%;
+            }
+        }
+
+        &__input {
+            background: $lightGray;
+            border: none;
+            width: 100%;
+            @include mq(sm) {
+                width: 70%;
+            }
+            &--textarea {
+                height: 80px;
+
+                @include mq(sm) {
+                    height: 10vh;
+                }
+            }
+        }
+
+        &__submit-button {
+            background: $blue;
+            color: $white;
+            border: none;
+            border-radius: 3px;
+            display: block;
+            padding: 5px 20px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include mq(sm) {
+                margin-right: 0;
+                padding: .2vw 2vw;
+                font-size: .8vw;
+                margin-bottom: 2vw;
+
+            }
+        }
+    }
+
+    &__text  {
+        font-size: 12px;
+        color: $blue;
+
+        @include mq(sm) {
+            font-size: .8vw;
+        }
+    }
+
+    &__group {
+        display: flex;
+        margin-bottom: 10px;
+
+        @include mq(sm) {
+            margin-bottom: 1vw;
+        }
+    }
+
+    i {
+        color: $blue;
+        margin-right: 10px;
+        width: 15px;
+        @include mq(sm) {
+            margin-right: 1vw;
+            width: 1vw;
+        }
+    }
+}

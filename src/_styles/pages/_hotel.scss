@@ -1,0 +1,466 @@
+.hotel,
+.programas,
+.empresas {
+    &__menu {
+        @include mq(sm) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--layout {
+            margin-top: 30px;
+
+            @include mq(sm) {
+                margin-top: 0;
+                height: 77.5vh;
+            }
+        }
+    }
+
+    &__container  {
+        overflow: hidden;
+        position: relative;
+        height: 86vw;
+        margin-bottom: 5vh;
+
+        @include mq(sm) {
+            height: 26vw;
+            margin-bottom: 0;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        background: rgba(0,0,0,.35);
+        width: 80%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0;
+
+        @include mq(sm) {
+            padding: 1vw 0;
+        }
+    }
+
+    &__title {
+        @include separator(80px);
+
+        padding-bottom: 20px;
+        margin: 0;
+        margin-bottom: 20px;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        @include mq(sm) {
+            @include separator(4vw);
+
+            padding-bottom: 1vw;
+            margin-bottom: 1vw;
+            font-size: 1vw;
+        }
+    }
+
+    &__text {
+        color: $white;
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 6px;
+
+        @include mq(sm) {
+            font-size: 1.3vw;
+            padding: 0 2.7vw;
+
+        }
+    }
+
+    &--nostalgia,
+    &--lugar,
+    &--habitaciones {
+        &__hero {
+            position: relative;
+
+            &__image {
+                overflow: hidden;
+                height: 72.5vh;
+
+                @include mq(sm) {
+                    height: 77.5vh;
+                }
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            &__wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                background: rgba(0,0,0,.35);
+                width: 70%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            &__title {
+                @include separator($size: 50px);
+
+                color: $white;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+
+                @include mq(sm) {
+                    @include separator;
+                    font-size: 1.2vw;
+                    padding-bottom: 2vw;
+                    margin-bottom: 2vw;
+
+                }
+            }
+
+            &__text {
+                text-transform: uppercase;
+                color: $white;
+                letter-spacing: 3px;
+                margin-bottom: 0;
+                font-size: 18px;
+
+                @include mq(sm) {
+                    font-size: 2vw;
+                }
+            }
+        }
+
+        &__overview {
+            margin-top: 3vh;
+            height: 70.5vh;
+
+            @include mq(sm) {
+                height: 75.5vh;
+            }
+
+            &__wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: 27vh;
+
+                @include mq(sm) {
+                    width: 60%;
+                    height: 25vh;
+                }
+
+                &--habitaciones {
+                    height: 25vh;
+
+                    @include mq(sm) {
+                        height: 20vh;
+                    }
+                }
+
+                &--lugar {
+                    height: 40vh;
+
+                    @include mq(sm) {
+                        height: 25vh;
+                    }
+                }
+            }
+
+            &__container {
+                height: 50.5vh;
+
+                &--habitaciones {
+                    height: 55.5vh;
+                }
+
+                &--premium-superior {
+                    height: 75.5vh;
+                }
+            }
+
+            &__title {
+                color: $black;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin-bottom: 10px;
+                text-align: center;
+
+                @include mq(sm) {
+                    margin-bottom: 2vw;
+                }
+            }
+
+            &__text {
+                text-align: center;
+                color: $black;
+                line-height: 2;
+                font-size: 10px;
+
+                @include mq(sm) {
+                    font-size: .8vw;
+
+                }
+            }
+
+            &__image {
+                width: 100%;
+                overflow: hidden;
+                height: 48.5vh;
+                margin-bottom: 20px;
+
+                @include mq(sm) {
+                    height: 50.5vh;
+                    margin-bottom: 0;
+                }
+
+                &--top {
+                    margin-bottom: 3vh;
+                }
+
+                &--lugar {
+                    height: 32.5vh;
+
+                    @include mq(sm) {
+                        height: 50.5vh;
+                    }
+                }
+
+                &--tradicional {
+                    height: 26.25vh;
+                }
+
+                &--premium-superior {
+                    height: 36.25vh;
+                }
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
+            &__description {
+                border: 1px solid $black;
+                text-align: center;
+                padding: 10px;
+                height: 72.5vh;
+
+                @include mq(sm) {
+                    height: 55.5vh;
+                    padding: 2vw 1vw;
+                }
+
+                &--premium,
+                &--premium-superior {
+                    @include mq(sm) {
+                        height: 75.5vh;
+                    }
+                }
+            }
+
+            &__description-wrapper {
+                display: flex;
+            }
+
+            &__description-col {
+                width: 50%;
+                padding-right: 5px;
+
+                @include mq(sm) {
+                    padding-right: .5vw;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                    padding-left: 5px;
+
+                    @include mq(sm) {
+                        padding-left: .5vw;
+                    }
+                }
+
+                &--ano-nuevo {
+                    width: 80%;
+                }
+            }
+
+            &__description-title {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin-top: 0;
+                margin-bottom: 20px;
+
+                @include mq(sm) {
+                    margin-bottom: 2vw;
+                }
+            }
+
+            &__description-text {
+                text-align: left;
+                font-size: 12px;
+
+                @include mq(sm) {
+                    font-size: 1vw;
+
+                }
+
+                &:first-child {
+                    margin-bottom: 2vw;
+                }
+
+                &--programas {
+                    margin-bottom: .5vw;
+
+                    &:first-child {
+                        margin-bottom: .5vw;
+                    }
+
+                    &--layout {
+                        margin-bottom: 2vw;
+
+                        &:first-child {
+                            margin-bottom: 2vw;
+                        }
+                    }
+                }
+
+                &--book {
+                    @include separator($color: $black);
+
+                    margin-bottom: 1vw;
+                    padding-bottom: 1vw;
+
+                    &:after {
+                        left: 0;
+                        transform: translate(0);
+                    }
+                }
+            }
+
+            &__description-list {
+                text-align: left;
+
+                li {
+                    font-size: 10px;
+                    @include mq(sm) {
+                        font-size: .7vw;
+
+                    }
+                }
+
+                &--programas {
+                    margin-bottom: 2vw;
+                }
+            }
+        }
+
+        &__images {
+            height: 72.5vh;
+
+            @include mq(sm) {
+                margin-top: 3vh;
+                height: 75.5vh;
+
+            }
+
+            &__image {
+                overflow: hidden;
+                height: 72.5vh;
+                margin-bottom: 20px;
+
+                @include mq(sm) {
+                    height: 75.5vh;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__more-images {
+            height: 72.5vh;
+
+            @include mq(sm) {
+                margin-top: 3vh;
+                height: 75.5vh;
+            }
+
+            &__image {
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+
+                &--left-top {
+                    height: 36.25vh;
+                    margin-bottom: 20px;
+
+                    @include mq(sm) {
+                        margin-bottom: 3vh;
+                    }
+                }
+
+                &--left-bottom {
+                    height: 36.25vh;
+                    margin-bottom: 20px;
+
+                    @include mq(sm) {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &--right  {
+                    height: 72.5vh;
+
+                    @include mq(sm) {
+                        height: 75.5vh;
+                    }
+                }
+            }
+        }
+
+        &__premium {
+            margin-top: 2vh;
+            height: 75.5vh;
+        }
+
+        &__premium-superior {
+            height: 72.5vh;
+
+            @include mq(sm) {
+                margin-top: 2vh;
+                height: 75.5vh;
+            }
+        }
+    }
+}

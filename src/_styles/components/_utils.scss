@@ -59,3 +59,27 @@
 [data-parallax]{
     position: relative;
 }
+
+.flex {
+    display: flex;
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+    padding: 12.5vh 0 15vh 0;
+
+    @include mq(sm) {
+        padding: 12.5vh 0 10vh 0;
+    }
+}
+
+.wrapper {
+    height: 72.5vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    @include mq(sm) {
+        height: 77.5vh;
+    }
+}
