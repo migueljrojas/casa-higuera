@@ -40,7 +40,7 @@
             font-size: 12px;
 
             @include mq(sm) {
-                font-size: 1.2vw;
+                font-size: 16px;
             }
         }
 
@@ -62,7 +62,7 @@
             width: 100%;
 
             @include mq(sm) {
-                font-size: 1vw;
+                font-size: 14px;
                 width: 30%;
             }
         }
@@ -96,9 +96,8 @@
             margin-right: auto;
 
             @include mq(sm) {
-                margin-right: 0;
                 padding: .2vw 2vw;
-                font-size: .8vw;
+                font-size: 16px;
                 margin-bottom: 2vw;
 
             }
@@ -108,10 +107,6 @@
     &__text  {
         font-size: 12px;
         color: $blue;
-
-        @include mq(sm) {
-            font-size: .8vw;
-        }
     }
 
     &__group {
@@ -127,6 +122,7 @@
         color: $blue;
         margin-right: 10px;
         width: 15px;
+
         @include mq(sm) {
             margin-right: 1vw;
             width: 1vw;

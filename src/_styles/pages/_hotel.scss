@@ -224,7 +224,7 @@
                 font-size: 10px;
 
                 @include mq(sm) {
-                    font-size: .8vw;
+                    font-size: 12px;
 
                 }
             }
@@ -324,10 +324,10 @@
 
             &__description-text {
                 text-align: left;
-                font-size: 12px;
+                font-size: 10px;
 
                 @include mq(sm) {
-                    font-size: 1vw;
+                    font-size: 12px;
 
                 }
 
@@ -369,8 +369,9 @@
 
                 li {
                     font-size: 10px;
+
                     @include mq(sm) {
-                        font-size: .7vw;
+                        font-size: 12px;
 
                     }
                 }
@@ -447,7 +448,7 @@
         }
 
         &__premium {
-            margin-top: 2vh;
+            margin-top: 3vh;
             height: 75.5vh;
         }
 
@@ -455,7 +456,7 @@
             height: 72.5vh;
 
             @include mq(sm) {
-                margin-top: 2vh;
+                margin-top: 3vh;
                 height: 75.5vh;
             }
         }

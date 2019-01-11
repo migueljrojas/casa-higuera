@@ -76,7 +76,7 @@ main {
 
 .wrapper {
     height: 72.5vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 
     @include mq(sm) {
