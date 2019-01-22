@@ -6,11 +6,11 @@ header.header
                     a(href="/")
                         .header__image
                             img(src="/images/logo.png")
-                    .header__nav
-                        ul.header__list
+                    nav.header__nav
+                        ul.header__menu
                             each item in site.data.header
                                 li
-                                    a(href=item.url)=item.name
+                                    a(href=item.url, target=item.target)=item.name
                     .header__language-selector
                         button.header__language es
                         button.header__language en

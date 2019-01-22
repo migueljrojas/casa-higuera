@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #3b3a60;
 
     @include mq(sm) {
         height: 10vh;
@@ -48,9 +49,10 @@
         margin: 0;
         font-size: 12px;
         margin-bottom: 10px;
+        color: #3b3a60;
 
         @include mq(sm) {
-            font-size: 1.3vmin;
+            font-size: 1vmin;
             padding: 0 2vh;
             margin: 0;
         }

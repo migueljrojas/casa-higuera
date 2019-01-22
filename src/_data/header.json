@@ -1,26 +1,32 @@
 [
     {
         "name":"el hotel",
-        "url":"/hotel"
+        "url":"/hotel",
+        "target":"_self"
     },
     {
         "name":"restaurante maralegre",
-        "url":"/restaurante"
+        "url":"http://maralegre.cl",
+        "target":"_blank"
     },
     {
         "name":"programas",
-        "url":"/programas"
+        "url":"/programas",
+        "target":"_self"
     },
     {
         "name":"empresas",
-        "url":"/empresas"
+        "url":"/empresas",
+        "target":"_self"
     },
     {
         "name":"contacto",
-        "url":"/contacto"
+        "url":"/contacto",
+        "target":"_self"
     },
     {
         "name":"reservar",
-        "url":"/reservar"
+        "url":"https://app.thebookingbutton.com/properties/higuerasdirect",
+        "target":"_blank"
     }
 ]
