@@ -85,11 +85,12 @@
             margin-bottom: 20px;
 
             @include mq(sm) {
+                margin-bottom: 0;
+                padding: 0 1vw;
+
                 &:after {
                     display: none;
                 }
-                margin-bottom: 0;
-                padding: 0 1vw;
             }
 
             &:not(:first-child) {
@@ -114,20 +115,22 @@
                     position: absolute;
                     left:calc(50% - 25px);
                 }
+
+                a {
+                    font-weight: 700;
+                }
             }
         }
 
         a {
             color: #3b3a60;
-            font-weight: 700;
-            
 
             @include mq(sm) {
-                font-size: 1vmin;
+                font-size: 1.2vmin;
                 letter-spacing: 1.5px;
                 font-weight: normal;
-
             }
+
         }
     }
 
@@ -151,7 +154,7 @@
 
         @include mq(sm) {
             padding: 0 1vw;
-            font-size: 1vmin;
+            font-size: 1.2vmin;
 
         }
 
