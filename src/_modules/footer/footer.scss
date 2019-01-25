@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     color: #3b3a60;
+    background: $white;
+    z-index: 1000;
 
     @include mq(sm) {
         height: 10vh;

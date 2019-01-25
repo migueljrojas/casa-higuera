@@ -14,6 +14,7 @@
             @include mq(sm) {
                 margin-top: 0;
                 height: 77.5vh;
+                margin-bottom: 13vh;
             }
         }
     }
@@ -44,13 +45,17 @@
         width: 80%;
         height: 35%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         padding: 10px 0;
 
         @include mq(sm) {
             padding: 1vw 0;
+        }
+
+        &--position {
+            justify-content: center;
         }
     }
 
@@ -94,6 +99,18 @@
     &--habitaciones {
         &__hero {
             position: relative;
+
+            &__nav-arrow {
+                position: absolute;
+                bottom: 4vw;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+                height: 20px;
+                width: 20px;
+                border-right: 3px solid $white;
+                border-bottom: 3px solid $white;
+                z-index: 10;
+            }
 
             &__image {
                 overflow: hidden;
@@ -157,6 +174,11 @@
 
             @include mq(sm) {
                 height: 75.5vh;
+                margin-bottom: 10vh;
+            }
+
+            &--layout {
+                margin-bottom: 0;
             }
 
             &__wrapper {
@@ -312,10 +334,6 @@
                 letter-spacing: 3px;
                 margin-top: 0;
                 margin-bottom: 20px;
-
-                @include mq(sm) {
-                    margin-bottom: 2vw;
-                }
             }
 
             &__description-text {
@@ -324,6 +342,10 @@
 
                 &:first-child {
                     margin-bottom: 2vw;
+                }
+
+                &--rates {
+                    color: $green;
                 }
 
                 &--programas {
@@ -357,6 +379,27 @@
                 }
             }
 
+            &__group {
+                &--separator {
+                    border-bottom: 1px solid $black;
+                    margin-bottom: 15px;
+                    padding-bottom: 5px;
+                }
+            }
+
+            &__rate-title {
+                text-align: left;
+                font-size: 12px;
+            }
+
+            &__rate-text,
+            &__comment {
+                text-align: left;
+                font-size: 9px;
+                color: $green;
+            }
+
+
             &__description-list {
                 text-align: left;
 
@@ -388,6 +431,12 @@
                     height: 75.5vh;
                     margin-bottom: 0;
                 }
+
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
             }
         }
 
@@ -396,7 +445,8 @@
 
             @include mq(sm) {
                 margin-top: 3vh;
-                height: 75.5vh;
+                height: 77.5vh;
+                margin-bottom: 10vh;
             }
 
             &__image {
@@ -438,7 +488,13 @@
 
         &__premium {
             margin-top: 3vh;
-            height: 75.5vh;
+            margin-bottom: 10vh;
+            height: 77.5vh;
+
+            &--layout {
+                margin-bottom: 0;
+                height: 75.5vh;
+            }
         }
 
         &__premium-superior {

@@ -4,9 +4,10 @@
     &__slider {
         margin-bottom: 0 !important;
         height: 72.5vh;
+        position: relative;
 
         @include mq(sm) {
-            height: 77.5vh;
+            height: 79.5vh;
         }
 
         &--layout {
