@@ -18,9 +18,19 @@ var Header = function() {
         // and test its normalized href against the url pathname regexp
 
         if(urlRegExp.test(this.href.replace(/\/$/,''))){
-            console.log(urlRegExp);
-
             $(this).parents('.header__menu li').addClass('-active');
+
+            return;
+        }
+        
+        if (url.indexOf('hotel') > -1) {
+            $('a[href="/hotel"').parents('.header__menu li').addClass('-active');
+            return;
+        }
+
+        if (url.indexOf('programas') > -1) {
+            $('a[href="/programas"').parents('.header__menu li').addClass('-active');
+            return;
         }
     });
 
@@ -53,6 +63,10 @@ var Header = function() {
                 });
             }
         }
+    });
+
+    $('.hotel--habitaciones__overview__description-text--rates').on('click', function() {
+        $(this).siblings('.hotel--habitaciones__overview__rates').toggleClass('-open');
     });
 };
 

@@ -97,6 +97,12 @@
     &--nostalgia,
     &--lugar,
     &--habitaciones {
+
+        &__servicios {
+            text-align: left;
+            margin: 0 0 5px;
+        }
+
         &__hero {
             position: relative;
 
@@ -241,7 +247,7 @@
             &__text {
                 text-align: center;
                 color: $black;
-                line-height: 2;
+                line-height: 1.5;
                 font-size: 12px;
                 letter-spacing: 1.5px;
             }
@@ -270,7 +276,7 @@
                 }
 
                 &--tradicional {
-                    height: 26.25vh;
+                    height: 27vh;
                 }
 
                 &--premium-superior {
@@ -291,8 +297,8 @@
                 height: 72.5vh;
 
                 @include mq(sm) {
-                    height: 55.5vh;
-                    padding: 2vw 1vw;
+                    height: 56.8vh;
+                    padding: 1vw 1vw;
                 }
 
                 &--premium,
@@ -341,11 +347,14 @@
                 font-size: 12px;
 
                 &:first-child {
-                    margin-bottom: 2vw;
+                    margin-bottom: 10px;
                 }
 
                 &--rates {
                     color: $green;
+                    cursor: pointer;
+                    padding: 5px 0;
+                    margin-bottom: 5px;
                 }
 
                 &--programas {
@@ -390,6 +399,8 @@
             &__rate-title {
                 text-align: left;
                 font-size: 12px;
+                margin-top: 0;
+                margin-bottom: 3px;
             }
 
             &__rate-text,
@@ -409,6 +420,20 @@
 
                 &--programas {
                     margin-bottom: 2vw;
+                }
+            }
+
+            &__rates {
+                @include trans;
+
+                max-height: 0;
+                opacity: 0;
+                overflow: hidden;
+
+                &.-open {
+                    max-height: 500px;
+                    opacity: 1;
+                    overflow: visible;
                 }
             }
         }
