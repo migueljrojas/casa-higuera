@@ -43,7 +43,7 @@
         transform: translate3d(-50%, -50%, 0);
         background: rgba(0,0,0,.35);
         width: 80%;
-        height: 35%;
+        // min-height: 35%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -55,12 +55,13 @@
         }
 
         &--position {
+            height: auto;
             justify-content: center;
         }
     }
 
     &__title {
-        @include separator(80px);
+        @include separator($size: 100px);
 
         padding-bottom: 20px;
         margin: 0;
@@ -71,11 +72,12 @@
         letter-spacing: 3px;
 
         @include mq(sm) {
-            @include separator(4vw);
+            @include separator(7vw);
 
             padding-bottom: 1vw;
             margin-bottom: 1vw;
             font-size: 16px;
+            letter-spacing: 6px;
         }
     }
 
@@ -90,7 +92,10 @@
         @include mq(sm) {
             font-size: 20px;
             padding: 0 15px;
+        }
 
+        span {
+            font-style: italic;
         }
     }
 
@@ -107,15 +112,15 @@
             position: relative;
 
             &__nav-arrow {
-                position: absolute;
-                bottom: 4vw;
+                position: fixed;
+                bottom: 40px;
                 left: 50%;
                 transform: translateX(-50%) rotate(45deg);
                 height: 20px;
                 width: 20px;
-                border-right: 3px solid $white;
-                border-bottom: 3px solid $white;
-                z-index: 10;
+                border-right: 3px solid $black;
+                border-bottom: 3px solid $black;
+                z-index: 2000;
             }
 
             &__image {
@@ -152,12 +157,13 @@
 
                 color: $white;
                 text-transform: uppercase;
-                font-size: 17px;
+                font-size: 16px;
                 padding-bottom: 20px;
                 margin-bottom: 20px;
+                letter-spacing: 3px;
 
                 @include mq(sm) {
-                    @include separator;
+                    @include separator($size: 8vw);
                     padding-bottom: 2vw;
                     margin-bottom: 2vw;
 
@@ -167,10 +173,14 @@
             &__text {
                 text-transform: uppercase;
                 color: $white;
-                letter-spacing: 3px;
+                letter-spacing: 6px;
                 margin-bottom: 0;
                 font-size: 32px;
                 text-align: center;
+
+                span {
+                    font-style: italic;
+                }
             }
         }
 
@@ -198,7 +208,7 @@
                 height: 27vh;
 
                 @include mq(sm) {
-                    width: 60%;
+                    width: 65%;
                     height: 25vh;
                 }
 
@@ -293,12 +303,12 @@
             &__description {
                 border: 1px solid $black;
                 text-align: center;
-                padding: 10px;
+                padding: 40px 20px;
                 height: 72.5vh;
 
                 @include mq(sm) {
                     height: 56.8vh;
-                    padding: 1vw 1vw;
+                    // padding: 1vw 1vw;
                 }
 
                 &--premium,
@@ -532,6 +542,114 @@
 
             &--layout {
                 margin-top: 0;
+            }
+        }
+
+        &__eg-modal {
+            background: rgba($purple, .9);
+            padding: 20px;
+            width: 90vw;
+
+            @include mq(sm) {
+                width: auto;
+                padding: 40px;
+            }
+
+            &__wrapper {
+                display: flex;
+            }
+
+            &__container {
+                &--left {
+                    width: 50%;
+
+                    @include mq(sm) {
+                        width: 25%;
+                    }
+                }
+
+                &--right {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    width: 50%;
+
+                    @include mq(sm) {
+                        width: 75%;
+                    }
+                }
+            }
+
+            &__column {
+
+                &--left {
+                    width: 100%;
+                }
+
+                &--right {
+                    min-width: 140px;
+
+                    @include mq(sm) {
+                        width: 33%;
+                        min-width: auto;
+                    }
+                }
+            }
+
+            &__cell-heading {
+                margin-bottom: 5px;
+                color: $white;
+                height: 80px;
+                border-bottom: 1px solid $white;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 14px;
+                    font-weight: 900;
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
+
+            &__cell {
+                height: 35px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                h3 {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 900;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 10px;
+                    color: $white;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: $white;
+                }
+            }
+
+            &__comment {
+                width: 100%;
+                margin-top: 20px;
+
+                p {
+                    font-size: 10px;
+                    color: $white;
+                }
             }
         }
     }

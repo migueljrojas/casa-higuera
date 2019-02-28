@@ -99,11 +99,11 @@
         color: $white;
         text-transform: uppercase;
         font-size: 3vmin;
-        letter-spacing: 3px;
+        letter-spacing: 6px;
 
-        @include mq(sm) {
-            letter-spacing: .3vmin;
-        }
+        // @include mq(sm) {
+        //     letter-spacing: .3vmin;
+        // }
     }
 
     &__leaf {

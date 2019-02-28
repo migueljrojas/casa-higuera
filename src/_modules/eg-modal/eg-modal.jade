@@ -1,0 +1,17 @@
+mixin eg-modal(backdrop)
+    .eg-modal
+        if backdrop === "true" 
+            .eg-modal__backdrop(data-modal="close")
+            .eg-modal__container
+                button.eg-modal__close(data-modal="close")
+                    span
+                    span
+                
+                block
+        else
+            .eg-modal__container
+                button.eg-modal__close(data-modal="close")
+                    span
+                    span
+                
+                block
