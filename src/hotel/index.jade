@@ -1,5 +1,7 @@
 extends ../_layouts/base
 
+include ../_modules/hotel-menu/hotel-menu
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
@@ -8,26 +10,4 @@ block content
     main.hotel
         section.hotel__menu.wrapper
             .container
-                .row
-                    .col-xs-24.col-sm-8
-                        a(href="/hotel-nostalgia")
-                            .hotel__container
-                                img(src="/images/hotel/hotel.jpg")
-                                .hotel__wrapper
-                                    h3.hotel__title el hotel
-                                    p.hotel__text nostalgia 
-                                        span chic
-                    .col-xs-24.col-sm-8
-                        a(href="/hotel-lugar")
-                            .hotel__container
-                                img(src="/images/hotel/Lugar.jpg")
-                                .hotel__wrapper
-                                    h3.hotel__title el lugar
-                                    p.hotel__text cielo y mar abierto
-                    .col-xs-24.col-sm-8
-                        a(href="/hotel-habitaciones")
-                            .hotel__container
-                                img(src="/images/hotel/habitaciones.jpg")
-                                .hotel__wrapper
-                                    h3.hotel__title las habitaciones
-                                    p.hotel__text volver a casa
+                +hotel-menu

@@ -1,17 +1,20 @@
 [
     {
         "heading":"Temporada Baja",
-        "text":"01 de May al 30 de Sept 2018 (Domingo a Jueves)",
+        "text1":"01 de May al 30 de Sept 2018",
+        "text2":"(Domingo a Jueves)",
         "precio":"$ 143.100 / US$ 228"
     },
     {
         "heading":"Temporada Baja",
-        "text":"01 de May al 30 de Sept 2018 (Viernes a Sábado)",
+        "text1":"01 de May al 30 de Sept 2018",
+        "text2":"(Viernes a Sábado)",
         "precio":"$ 159.000 / US$ 228"
     },
     {
         "heading":"Temporada Alta",
-        "text":"01 de Oct 2018 al 30 de Abr 2019 (Domingo a Jueves)",
+        "text1":"01 de Oct 2018 al 30 de Abr 2019",
+        "text2":"(Domingo a Jueves)",
         "precio":"$ 197.000 / US$ 320"
     }
 ]

@@ -1,5 +1,7 @@
 extends ../_layouts/base
 
+include ../_modules/programas-menu/programas-menu
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
@@ -15,6 +17,7 @@ block content
                                 .col-xs-24.col-sm-12
                                     .row
                                         .col-xs-24
+                                            button.hotel--habitaciones__hero__nav-arrow.scroll-down
                                             .programas--habitaciones__overview__image.programas--habitaciones__overview__image--tradicional.programas--habitaciones__overview__image--top.programas--habitaciones__overview__image--premium-superior
                                                 img(src="/images/programas/fin-de-semana/01.jpg")
                                     .row
@@ -38,3 +41,6 @@ block content
                                                 p.programas--habitaciones__overview__description-text.programas--habitaciones__overview__description-text--programas Detalles y disponibilidad a 
                                                     a(href="/") info@casahigueras.cl
                                                     
+            section.programas__menu.programas__menu--layout#overview
+                .container
+                    +programas-menu                                        
