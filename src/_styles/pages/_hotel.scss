@@ -330,19 +330,7 @@
                 border: 1px solid $black;
                 text-align: center;
                 padding: 40px 20px;
-                height: 72.5vh;
-
-                @include mq(sm) {
-                    height: 56.8vh;
-                    // padding: 1vw 1vw;
-                }
-
-                &--premium,
-                &--premium-superior {
-                    @include mq(sm) {
-                        height: 75.5vh;
-                    }
-                }
+                height: auto;
             }
 
             &__description-wrapper {
@@ -387,12 +375,19 @@
                 }
 
                 &--rates {
-                    color: $green;
+                    color: $mainColor;
                     cursor: pointer;
                     margin: 0;
                     margin-right: 20px;
                     padding-right: 20px;
                     border-right: 1px solid $black;
+                    display: inline-block;
+                    min-width: 60px;
+
+                    &:hover {
+                        font-weight: 900;
+                        color: $mainColor;
+                    }
                 }
 
                 &--programas {
@@ -415,6 +410,12 @@
                     display: block;
                     color: $mainColor;
                     margin: 0;
+                    min-width: 60px;
+
+                    &:hover {
+                        font-weight: 900;
+                        color: $mainColor;
+                    }
                 }
             }
 
