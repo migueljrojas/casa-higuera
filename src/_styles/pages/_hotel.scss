@@ -160,7 +160,6 @@
                 img {
                     height: auto;
                     width: 100%;
-                    // min-height: 100%;
                 }
             }
 
@@ -454,6 +453,10 @@
                     font-size: 12px;
                 }
 
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+
                 &--programas {
                     margin-bottom: 2vw;
                 }
@@ -495,8 +498,8 @@
 
 
                 img {
-                    height: 100%;
-                    width: auto;
+                    height: auto;
+                    width: 100%;
                 }
             }
         }
