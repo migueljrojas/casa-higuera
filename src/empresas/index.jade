@@ -2,7 +2,7 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
 
 block content
     main.empresas
@@ -17,18 +17,29 @@ block content
                                 .empresas__wrapper.empresas__wrapper--position
                                     .empresas__title empresas
                                     .empresas__wrapper__text programas especiales
-                .row
-                    .col-xs-20.col-xs-offset-2
-                        section.hotel--lugar__overview#overview
+                    .col-xs-24
+                        section.hotel--lugar__overvie.hotel--lugar__overvie--layoutw#overview
                             .row
                                 .col-xs-24
                                     .hotel--lugar__overview__wrapper.hotel--lugar__overview__wrapper--lugar
                                         h3.hotel--lugar__overview__title programas  especiales
                                         p.hotel--lugar__overview__text Tranquilidad, privacidad e inmejorable ubicación. Casa higueras es reconocido como un lugar ideal para reuniones de negocios y directorios. Cuenta con espacios amplios y acogedores, sala de reuniones con vista privilegiada al puerto de Valparaíso, todo el equipamiento necesario, y un excelente servicio de Coffe-Break preparado "in house" por su Restaurant Maralegre.
-                            .row
-                                .col-xs-24.col-sm-16
+                                .col-xs-24
                                     .hotel--lugar__overview__image
                                         img(src="/images/empresas/02.jpg")
-                                .col-xs-24.col-sm-8
-                                    .hotel--lugar__overview__image
+
+                    .col-xs-24
+                        section.hotel--lugar__more-images
+                            .row
+                                .col-xs-24.col-md-12
+                                    .hotel--lugar__more-images__image.hotel--lugar__more-images__image--half
                                         img(src="/images/empresas/03.jpg")
+                                .col-xs-24.col-md-12
+                                    .hotel--lugar__more-images__image.hotel--lugar__more-images__image--half
+                                        img(src="/images/empresas/04.jpg")
+                                .col-xs-24
+                                    .hotel--lugar__more-images__image.hotel--lugar__more-images__image--big
+                                        img(src="/images/empresas/05.jpg")
+                                .col-xs-24
+                                    .hotel--lugar__more-images__image.hotel--lugar__more-images__image--big
+                                        img(src="/images/empresas/06.jpg")

@@ -99,7 +99,6 @@
             @include mq(sm) {
                 padding: .2vw 2vw;
                 margin-bottom: 2vw;
-
             }
         }
     }
@@ -108,6 +107,14 @@
         font-size: 12px;
         letter-spacing: 2px;
         color: $blue;
+    }
+
+    &__contact-info {
+        margin-bottom: 20vh;
+
+        @include mq(md) {
+            margin-bottom: 0;
+        }
     }
 
     &__group {

@@ -74,9 +74,11 @@ main {
 }
 
 .wrapper {
-    height: 72.5vh;
+    // height: 72.5vh;
+    margin-bottom: 20vh;
 
     @include mq(sm) {
         height: 77.5vh;
+        margin-bottom: 0; 
     }
 }
