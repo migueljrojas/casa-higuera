@@ -34,6 +34,10 @@
             height: 7vh;
         }
 
+        @include customMq(1600px) {
+            height: 5vh;
+        }
+
         img {
             width: auto;
             height: 100%;
