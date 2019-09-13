@@ -24,7 +24,7 @@
         overflow: hidden;
         position: relative;
         height: 0;
-        margin-bottom: 5vh;
+        margin-bottom: 13vh;
         padding-bottom: 100%;
 
         img {
@@ -221,11 +221,11 @@
 
         &__overview {
             margin-top: 3vh;
-            min-height: 70.5vh;
+            // min-height: 70.5vh;
 
             @include mq(sm) {
-                min-height: 75.5vh;
-                margin-bottom: 10vh;
+                // min-height: 75.5vh;
+                // margin-bottom: 10vh;
             }
 
             &--layout {
@@ -240,11 +240,11 @@
                 margin-left: auto;
                 margin-right: auto;
                 width: 100%;
-                height: 27vh;
+                // height: 27vh;
 
                 @include mq(sm) {
                     width: 65%;
-                    height: 25vh;
+                    // height: 25vh;
                 }
 
                 &--habitaciones {
@@ -256,24 +256,26 @@
                 }
 
                 &--lugar {
-                    height: 40vh;
+                    margin-bottom: 40px;
+                    // height: 40vh;
 
-                    @include mq(sm) {
-                        height: 25vh;
-                    }
+                    // @include mq(sm) {
+                    //     height: 25vh;
+                    // }
                 }
             }
 
             &__container {
-                height: 50.5vh;
+                margin-bottom: 40px;
+                // height: 50.5vh;
 
-                &--habitaciones {
-                    height: 55.5vh;
-                }
+                // &--habitaciones {
+                //     height: 55.5vh;
+                // }
 
-                &--premium-superior {
-                    height: 75.5vh;
-                }
+                // &--premium-superior {
+                //     height: 75.5vh;
+                // }
             }
 
             &__title {
@@ -300,12 +302,12 @@
             &__image {
                 width: 100%;
                 overflow: hidden;
-                height: 48.5vh;
+                // height: 48.5vh;
                 margin-bottom: 20px;
                 position: relative;
 
                 @include mq(sm) {
-                    height: 50.5vh;
+                    // height: 50.5vh;
                     margin-bottom: 0;
                 }
 
@@ -314,19 +316,36 @@
                 }
 
                 &--lugar {
-                    height: 32.5vh;
+                    margin-bottom: 3vh;
+                    padding-bottom: 104.5%;
 
                     @include mq(sm) {
-                        height: 50.5vh;
+                        // height: 50.5vh;
+                    }
+                }
+
+                &--lugar-big {
+                    margin-bottom: 3vh;
+                    padding-bottom: 50%;
+
+                    @include mq(sm) {
+                        // height: 50.5vh;
                     }
                 }
 
                 &--tradicional {
-                    height: 36.25vh;
+                    height: 0;
+                    padding-bottom: 50%;
+                    margin-bottom: 3vh;
+
+                    img {
+                        height: auto;
+                        width: 100%;
+                    }
                 }
 
                 &--premium-superior {
-                    height: 36.25vh;
+                    margin-bottom: 3vh;
                 }
 
                 img {
@@ -334,9 +353,6 @@
                     top: 50%;
                     left: 50%;
                     transform: translate3d(-50%, -50%, 0);
-                    height: auto;
-                    width: 100%;
-                    min-height: 100%;
                 }
             }
 
@@ -497,23 +513,25 @@
         }
 
         &__images {
-            height: 72.5vh;
+            // height: 72.5vh;
 
             @include mq(sm) {
                 margin-top: 3vh;
-                height: 75.5vh;
+                // height: 75.5vh;
 
             }
 
             &__image {
                 overflow: hidden;
-                height: 72.5vh;
-                margin-bottom: 20px;
+                // height: 72.5vh;
+                margin-bottom: 3vh;
                 position: relative;
+                height: 0;
+                padding-bottom: 100%;
 
                 @include mq(sm) {
-                    height: 75.5vh;
-                    margin-bottom: 0;
+                    // height: 75.5vh;
+                    // margin-bottom: 0;
                 }
 
 
@@ -530,10 +548,10 @@
 
         &__more-images {
             // height: 72.5vh;
-            margin-bottom: 100px;
+            // margin-bottom: 100px;
 
             @include mq(sm) {
-                margin-top: 3vh;
+                // margin-top: 3vh;
                 // height: 77.5vh;
                 margin-bottom: 10vh;
             }
@@ -544,17 +562,16 @@
 
                 img {
                     position: absolute;
-                    width: 100%;
-                    height: auto;
                     top: 50%;
                     left: 50%;
                     transform: translate3d(-50%, -50%, 0);
                 }
 
                 &--left-top {
-                    height: 36.25vh;
+                    // height: 50%;
                     margin-bottom: 20px;
-                    
+                    padding-bottom: 50%;
+
                     @include mq(sm) {
                         margin-bottom: 3vh;
                     }
@@ -566,7 +583,7 @@
                 }
 
                 &--left-bottom {
-                    height: 36.25vh;
+                    padding-bottom: 100%;
                     margin-bottom: 20px;
 
                     @include mq(sm) {
@@ -580,56 +597,82 @@
                 }
 
                 &--half  {
-                    height: 72.5vh;
+                    // height: 72.5vh;
                     margin-bottom: 20px;
+                    padding-bottom: 150%;
 
                     @include mq(sm) {
-                        height: 75.5vh;
+                        // height: 75.5vh;
                         margin-bottom: 3vh;
                     }
 
                     img  {
-                        height: auto;
-                        width: 100%;
+                        height: 100%;
+                        width: auto;
                     }
                 }
 
-                &--big {
-                    height: 72.5vh;
+                &--half-left {
                     margin-bottom: 20px;
+                    padding-bottom: calc(75% - 1.5vh);
 
                     @include mq(sm) {
-                        height: 75.5vh;
+                        // height: 75.5vh;
                         margin-bottom: 3vh;
                     }
+                }
 
+                &--big,
+                &--big-alt {
+                    height: 0;
+                    margin-bottom: 20px;
+                    padding-bottom: 100%;
+                    
+                    @include mq(sm) {
+                        // height: 75.5vh;
+                        margin-bottom: 3vh;
+                    }
+                    
                     img {
                         height: 100%;
+                        width: auto;
+
+                        @include mq(md) {
+                            // height: auto;
+                            // width: 100%;
+                        }
+                    }
+                }
+
+                &--big-alt {
+                    img {
+                        height: auto;
                         width: 100%;
 
                         @include mq(md) {
-                            height: auto;
-                            width: 100%;
+                            // height: auto;
+                            // width: 100%;
                         }
                     }
                 }
 
                 &--double {
-                    height: 72.5vh;
+                    height: 0;
+                    padding-bottom: 200%;
                     margin-bottom: 20px;
 
                     @include mq(sm) {
-                        height: 151vh;
+                        // height: 151vh;
                         margin-bottom: 3vh;
                     }
 
                     img {
                         height: 100%;
-                        width: 100%;
+                        width: auto;
 
                         @include mq(md) {
-                            height: auto;
-                            width: 100%;
+                            // height: auto;
+                            // width: 100%;
                         }
                     }
                 }
